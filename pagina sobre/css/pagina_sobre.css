@@ -65,7 +65,7 @@ nav #btn-1 {
     margin-left: 20px;
     padding: 8px 16px;
     border: none;
-    background-color: #ffffff;
+    background-color: #fdfdfd;
     color: #f1171f;
     border-radius: 4px;
     cursor: pointer;
@@ -111,8 +111,10 @@ nav #btn-1:hover {
     border-radius: 10px;
     background-color: #bb1217;
     height: auto;
-    width: 12vh;
+    width: 14vh;
     color: white;
+    text-align: center;
+    padding: 5px;
 }
 
 .img-container img {
@@ -130,3 +132,92 @@ nav #btn-1:hover {
     align-items: center;
 
 }
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 15vh;
+    }
+
+    .txt {
+        width: 80%;
+        margin-top: 2vh;
+    }
+
+    .img-container img {
+        width: 90%;
+        margin-top: 3vh;
+    }
+
+    nav {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+/* Celulares (até 768px) */
+@media (max-width: 768px) {
+    header {
+         display: flex;
+        justify-content: space-between;
+        height: auto;
+        padding: 10px;
+    }
+
+    .bt-1{
+        display: none;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .bt {
+        margin: 5px;
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+
+    .content {
+        flex-direction: column;
+        margin-top: 20vh;
+        text-align: center;
+    }
+
+    .txt {
+        width: 90%;
+    }
+
+    .txt h1 {
+        font-size: 24px;
+    }
+
+    .txt p {
+        font-size: 16px;
+    }
+
+    .img-container img {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+    .txt h1 {
+        font-size: 20px;
+    }
+
+    .txt p {
+        font-size: 14px;
+    }
+
+    nav .bt {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+}
+
